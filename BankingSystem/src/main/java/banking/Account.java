@@ -31,7 +31,7 @@ public abstract class Account {
 
 	public boolean validatePin(int attemptedPin) {
 		// complete the function
-		if(this.pin==attemptedPin) {
+		if(pin==attemptedPin) {
 			return true;
 		}else {
 			return false;
@@ -50,13 +50,13 @@ public abstract class Account {
 	}
 
 	public void creditAccount(double amount) {
-		this.balance+=amount;
+		balance+=amount;
 		// complete the function
 	}
 
 	public boolean debitAccount(double amount) {
 		// complete the function
-		if(this.balance-amount>=0) {
+		if(balance-amount>=0) {
 			return true;
 		}else {
 			return false;
